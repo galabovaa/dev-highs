@@ -4,7 +4,7 @@
 ### Motivation
 
 Documentation has a possibility of inconsistency between the website Guide and the Readme.
-Modify automatically as code is updated.
+Modify automatically as code is updated. See motivation-guidelines-documentation.md.
 
 ### Suggested improvement
   auto generate documentation from markdown for website

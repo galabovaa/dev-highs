@@ -21,3 +21,46 @@ Living in the #ifdef Hell: https://www.cqse.eu/en/blog/living-in-the-ifdef-hell/
 
 It would be good to know that you won't affect highs execution with changes in
 highs dev - it is for experimental code and analysis.
+
+HiGHS
+-----
+git ergo:
+code reviews (brief)
+actions:
+to ensure consistency, readability and to avoid unnecessary merge conflicts
+ - lint
+
+Initial suggested test environment structure:
+
+"Scaffold" (on git, separately)
+ - callback testing env:
+   - file outside highs
+   - implements "dumpHMO()"
+
+     - use within HiGHSDEV
+
+testing/debugging (J)
+ - TESTS_FOLDER
+ - TestHmo.cpp => builds exe which J's
+
+Testing
+
+Testing i-cpp
+learning, HiGHS context
+
+cpp general checkers
+
+    clang-format-lint
+      github action on
+    cppcheck:
+      4 errors test basis solve
+      2 errors ipx
+      3 errors filereader
+    valgrind
+      .
+    clang-tidy:
+    cppclean: lots of warnings
+    cpplint woohoo
+
+github actions
+  can be script (like ctest but outside of HiGHS)
