@@ -36,6 +36,17 @@ calls to internal data structures and the linking between them.
 "scaffolding concept"
 
 - maintain the conceptual integrity of the HiGHS code structure
-- run test and development code without modifying current HiGHS repo source 
+- run test and development code without modifying current HiGHS repo source
 - make sure behaviour corresponds to requirements and the documentaion is
   consistent and reflects that
+
+### Suggested improvement implementation
+
+Scaffold code at
+https://www.github.com/galabovaa/bscaffold.git
+
+##### Pre-release unit tests
+##### Platforms
+##### Code Coverage
+##### Performance
+##### Dev
