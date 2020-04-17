@@ -35,4 +35,4 @@ Windows build fixed in the meantime
 
 todo: branch cmake-targets
 
-See highs-docsy Linking against HiGHS part.
+todo: See highs-docsy Linking against HiGHS part.

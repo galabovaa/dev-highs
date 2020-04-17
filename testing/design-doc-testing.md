@@ -38,7 +38,7 @@ Leave a few feasible instances, one infeasible instance and one call with empty 
 
 Windows, Linux and Mac are tested with GitHub Actions.
 
-Clang and GNU on Linux.
+(todo:) Clang and GNU on Linux.
 
 CMake Debug and Release.
 
@@ -55,7 +55,7 @@ make ci_cov
 
 to push coverage info
 
-``` 
+```
 todo: add code
 ```
 
