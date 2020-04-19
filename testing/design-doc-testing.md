@@ -53,12 +53,6 @@ make -j4
 make ci_cov
 ```
 
-to push coverage info
-
-```
-todo: add code
-```
-
 ##### Performance
 
 ##### Dev

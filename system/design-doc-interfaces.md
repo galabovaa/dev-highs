@@ -1,5 +1,4 @@
 # Interfaces
-todo:
 
 SCIP
 OSI

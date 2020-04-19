@@ -48,7 +48,7 @@ HiGHS
 Resources
 * website [highs.dev]
 * github repo | master | latest version | tests passing
-* documentation site (highs-docsy, todo: add link) about.md = README.md
+* documentation site (highs-docsy) about.md = README.md
 
 Targets
 * executable
