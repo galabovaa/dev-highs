@@ -16,9 +16,9 @@ See motivation-guidelines-testing.
 
 "scaffolding concept"
 
-* maintain the conceptual integrity of the HiGHS code structure
-* run test and development code without modifying current HiGHS repo source
-* make sure behaviour corresponds to requirements and the documentaion is
+- maintain the conceptual integrity of the HiGHS code structure
+- run test and development code without modifying current HiGHS repo source
+- make sure behaviour corresponds to requirements and the documentaion is
 
   consistent and reflects that
 
@@ -26,28 +26,32 @@ See motivation-guidelines-testing.
 
 Scaffold code at
 https://www.github.com/galabovaa/scaffold.git
+See README.md and comments in the CMakeLists.txt in each subdir.
+
+dev-presolve/ is an example of how one would use the scaffold for development. See the README in scaffold/ and the guide.md in dev-highs. It is an example of a folder which can exist locally or on any git branch of scaffold/ which can be copied into HiGHS for development or test of that component. The scaffold/ repo will contain scaffold utilities and will define the scaffold executable, which will run unit tests on HiGHS and some component tests if we want to link them. dev-presolve defines it's own executable
+
+Targets are build with CMake. Some scaffold subdirs are meant to be included at the bottom of the HiGHS root CMakeLists.txt, some are not meant to be included, like the one currently defined in scaffold/unit_test/, which for the moment is its own project.
 
 ##### Pre-release unit tests
 
-The Catch unit test library uses system-dependent code so we are removing the unit tests from master and moving them to bscaffold instead.
-check/ becomes check-pre-release.
+The Catch unit test library uses system-dependent code so we are removing the unit tests from master and moving them to scaffold instead.
 
-Leave a few feasible instances, one infeasible instance and one call with empty file.
+Will leave a few feasible instances, one infeasible instance and one call with empty file.
 
 ##### Platforms
 
 Windows, Linux and Mac are tested with GitHub Actions.
 
-(todo:) Clang and GNU on Linux.
+Clang is tested by Ivet on her new Mac :)
 
 CMake Debug and Release.
 
 ##### Code Coverage
 
 To build coverage info
-after folder check/ (and other check-/ subdirs are copied)
+todo: after unit tests are sorted, and maybe cmake-targets branch cleanup
 
-``` bash
+```bash
 cmake -DCMAKE_BUILD_TYPE=DEBUG -DCI=ON -DHIGHS_COVERAGE=ON ..
 make -j4
 make ci_cov
@@ -57,3 +61,4 @@ make ci_cov
 
 ##### Dev
 
+The repo dev-presolve is an example of how one would use utilities defined in HiGHS from outside of HiGHS//.
