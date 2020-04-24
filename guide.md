@@ -1,30 +1,35 @@
-Release Version 1.0
+# Release Version 1.0
 
 Release versions will be changed manually from the HiGHS/CMakeLists.txt for the moment.
 
 This set of documents serves as internal specification complimenting the source code along with the highs-docsy for public documentation (see section Documentation below) for the official HiGHS 1.0 resease.
 
-See design-doc.md for the general structure and the design docs in the subfolders for component details.
+The structure of this design-doc collection is based on the HiGHS structure outlined in dev-highs/design-doc.md
+See the design docs in the subfolders for further details.
 
-April 2020
+### April 2020
 
-Change Log
+###### Next:
 
-* todo: finish testing code (scaffold, builds, interfaces -> finish highs-docsy)
-* todo: clear up this section
+- Finish highs-docsy when builds (More Modern CMake) and interfaces (Julia) are ready for release.
 
->* catch-out
->* cmake-targets-...
+###### Change Log
+
+24.04 Scaffold 1.0
 
 > Documentation
-  highs-docsy now available at //todo: add link
-  about.md corresponds to the repo README.md
+> highs-docsy is mostly ready at https://galabovaa.github.io/highs-docsy/ (to be moved to ERGO-Code repo for release)
+> about.md corresponds to the repo README.md
 > Testing
-  catch-out
-  The unit tests with Catch/ are now moved to scaffold/ along with other testing and development utilities.
+> catch-out
+> The unit tests with Catch/ can now be moved to scaffold/ along with other testing and development utilities.
+> scaffold project version 1.0 up on github
 > System
-  > Build
-  cmake-targets-...
-  Windows build was fixed for parallel code too, check for OpenMP Version now happens in CMake.
-  Targets install and link correctly.
+> Build
 
+    Windows build was fixed for parallel code too, check for OpenMP Version now happens in CMake.
+    Targets install and link correctly.
+
+> Interfaces
+
+    Most of the system dependent bits of code are removed. The unit tests need to be removed too. WIP More Modern CMake.
