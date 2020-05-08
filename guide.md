@@ -15,6 +15,16 @@ See the design docs in the subfolders for further details.
 
 ###### Change Log
 
+08.05 
+
+> Added GitHub actions to scaffold/ making sure it builds on its own and with component/test
+> Added -DFAST_BUILD to CMake options of HiGHS, start of CMake update for build and interfaces
+> API design
+  > Julia should talk to C++ directly
+  > For Java consider FluentAPI design suggested by Sergey
+    void * methods in Java or C++ API
+
+
 24.04 Scaffold 1.0
 
 > Documentation

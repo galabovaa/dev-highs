@@ -1,5 +1,4 @@
-## Documentation
--------------
+## Documentation Design Doc
 
 ### Motivation
 
