@@ -35,6 +35,7 @@ Single highs target (ipx object target?)
 
 Windows build fixed in the meantime
 
-todo: branch cmake-targets
+September cmake issue 401 
+~~~ start here 
 
-todo: See highs-docsy Linking against HiGHS part.
+cmake-doc start of design doc
